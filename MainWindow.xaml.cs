@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using TransComp.Data;
+using TransComp.Data.Context;
+using TransportComp.Pages;
 
 namespace TransportComp
 {
@@ -9,7 +12,26 @@ namespace TransportComp
     {
         public MainWindow()
         {
+            new ApplicationContext();
             InitializeComponent();
+            SupportObject.mainFrame = MainFrame;
+            SupportObject.statusBarMsg = StatusBar;
+            SupportObject.mainFrame.Navigate(new PageMain());
+        }
+
+        private void BtnBack_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (!SupportObject.mainFrame.CanGoBack)
+                SupplyMethods.SetMessageToStatusBar("You are on the main page!");
+            else
+            {
+                SupportObject.mainFrame.GoBack();
+            }
+        }
+
+        private void BtnFaq_OnClick(object sender, RoutedEventArgs e)
+        {
+            SupplyMethods.SetMessageToStatusBar("Work in progress!");
         }
     }
 }

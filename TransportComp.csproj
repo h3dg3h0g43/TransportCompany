@@ -169,6 +169,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\Context\ApplicationContext.cs" />
+    <Compile Include="Data\Context\ConnectToDb.cs" />
+    <Compile Include="Data\Models\Depot.cs" />
+    <Compile Include="Data\Models\Driver.cs" />
+    <Compile Include="Data\Models\DriverPhoto.cs" />
+    <Compile Include="Data\Models\Route.cs" />
+    <Compile Include="Data\Models\Truck.cs" />
+    <Compile Include="Data\Models\TruckPhoto.cs" />
     <Compile Include="Data\SupplyMethods.cs" />
     <Compile Include="Data\SupportObject.cs" />
     <Compile Include="Services\UploadPhotos.cs" />
