@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TransportComp"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="ОАО \\Титька перевозчик//" Height="720" Width="1280" MaxHeight="720" MaxWidth="1280" MinHeight="720"
+        Title="Transport company by h3dg3h0g" Height="720" Width="1280" MaxHeight="720" MaxWidth="1280" MinHeight="720"
         MinWidth="1280" Background="DimGray">
     <Grid>
         <Grid.RowDefinitions>

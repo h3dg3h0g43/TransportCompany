@@ -1,0 +1,33 @@
+﻿<Page x:Class="TransportComp.Pages.PageAddDepot"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TransportComp.Pages" xmlns:viewModels="clr-namespace:TransportComp.Data.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Background="DimGray">
+    <Page.DataContext>
+        <viewModels:AddDepotViewModel />
+    </Page.DataContext>
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Город:" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding City, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                     x:Name="TxtDepotCity"
+                     Style="{StaticResource mainTxtBox}"
+                     Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Адрес:" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding Address, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                     x:Name="TxtAddress"
+                     Style="{StaticResource mainTxtBox}" Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding AddDepot}" x:Name="BtnSave" Content="Сохранить" Style="{StaticResource mainBtn}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

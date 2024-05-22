@@ -10,17 +10,17 @@
             <StackPanel Orientation="Vertical">
                 <Button x:Name="BtnAddTruck" Click="BtnAddTruck_OnClick" Content="Добавить грузовик"
                         Style="{StaticResource mainBtn}" />
-                <Button x:Name="BtnEconomy" Click="BtnEconomy_OnClick" Content="Финансы"
+                <Button x:Name="BtnAddDepot" Click="BtnAddDepot_OnClick" Content="Добавить депо"
                         Style="{StaticResource mainBtn}" />
                 <Button x:Name="BtnTrucks" Click="BtnTrucks_OnClick" Content="Грузовики" Style="{StaticResource mainBtn}" />
                 <Button x:Name="BtnStatus" Click="BtnStatus_OnClick" Content="Статус" Style="{StaticResource mainBtn}" />
             </StackPanel>
             <StackPanel Orientation="Vertical">
-                <Button x:Name="BtnAddStaff" Click="BtnAddStaff_OnClick" Content="Добавить водителя"
+                <Button x:Name="BtnAddDriver" Click="BtnAddDriver_Click" Content="Добавить водителя"
                         Style="{StaticResource mainBtn}" />
-                <Button x:Name="BtnManagement" Click="BtnManagement_OnClick" Content="Менеджмент"
+                <Button x:Name="BtnDepots" Click="BtnDepots_Click" Content="Список депо"
                         Style="{StaticResource mainBtn}" />
-                <Button x:Name="BtnStaff" Click="BtnStaff_OnClick" Content="Водители" Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnDrivers" Click="BtnDrivers_Click" Content="Водители" Style="{StaticResource mainBtn}" />
                 <Button x:Name="BtnRoutes" Click="BtnPartnership_OnClick" Content="Маршруты"
                         Style="{StaticResource mainBtn}" />
             </StackPanel>

@@ -180,6 +180,7 @@
     <Compile Include="Data\Models\TruckPhoto.cs" />
     <Compile Include="Data\SupplyMethods.cs" />
     <Compile Include="Data\SupportObject.cs" />
+    <Compile Include="Data\ViewModels\AddDepotViewModel.cs" />
     <Compile Include="Data\ViewModels\AddDriverViewModel.cs" />
     <Compile Include="Data\ViewModels\AddTruckViewModel.cs" />
     <Compile Include="Data\ViewModels\DeleteTruckViewModel.cs" />
@@ -188,6 +189,9 @@
     <Compile Include="Data\ViewModels\EditDriverViewModel.cs" />
     <Compile Include="Data\ViewModels\EditTruckViewModel.cs" />
     <Compile Include="Data\ViewModels\TruckViewModel.cs" />
+    <Compile Include="Pages\PageAddDepot.xaml.cs">
+      <DependentUpon>PageAddDepot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Services\UploadPhotos.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +205,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageAddDepot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageAddDriver.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

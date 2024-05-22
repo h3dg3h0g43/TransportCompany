@@ -32,24 +32,24 @@ namespace TransportComp.Pages
             SupplyMethods.SetMessageToStatusBar("Work in progress!");
         }
 
-        private void BtnAddStaff_OnClick(object sender, RoutedEventArgs e)
+        private void BtnAddDepot_OnClick(object sender, RoutedEventArgs e)
+        {
+            SupportObject.mainFrame.Navigate(new PageAddDepot());
+        }
+
+        private void BtnAddDriver_Click(object sender, RoutedEventArgs e)
         {
             SupportObject.mainFrame.Navigate(new PageAddDriver());
         }
 
-        private void BtnManagement_OnClick(object sender, RoutedEventArgs e)
+        private void BtnDepots_Click(object sender, RoutedEventArgs e)
         {
             SupplyMethods.SetMessageToStatusBar("Work in progress!");
         }
 
-        private void BtnStaff_OnClick(object sender, RoutedEventArgs e)
+        private void BtnDrivers_Click(object sender, RoutedEventArgs e)
         {
             SupportObject.mainFrame.Navigate(new PageDrivers());
-        }
-
-        private void BtnEconomy_OnClick(object sender, RoutedEventArgs e)
-        {
-            SupplyMethods.SetMessageToStatusBar("Work in progress!");
         }
     }
 }
