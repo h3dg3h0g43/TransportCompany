@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TransComp.Data.Models
+namespace TransportComp.Data.Models
 {
 
     public class Driver

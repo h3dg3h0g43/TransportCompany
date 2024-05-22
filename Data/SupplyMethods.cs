@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace TransComp.Data
+namespace TransportComp.Data
 {
 
     public class SupplyMethods

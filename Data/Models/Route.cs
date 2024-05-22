@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TransComp.Data.Models
+namespace TransportComp.Data.Models
 {
 
     public class Route

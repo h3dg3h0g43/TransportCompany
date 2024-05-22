@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using TransComp.Data;
+using TransportComp.Data;
 
 namespace TransportComp.Pages
 {

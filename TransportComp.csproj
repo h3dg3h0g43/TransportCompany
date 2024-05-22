@@ -171,6 +171,7 @@
     </ApplicationDefinition>
     <Compile Include="Data\Context\ApplicationContext.cs" />
     <Compile Include="Data\Context\ConnectToDb.cs" />
+    <Compile Include="Data\Core\RelayCommand.cs" />
     <Compile Include="Data\Models\Depot.cs" />
     <Compile Include="Data\Models\Driver.cs" />
     <Compile Include="Data\Models\DriverPhoto.cs" />
@@ -179,6 +180,14 @@
     <Compile Include="Data\Models\TruckPhoto.cs" />
     <Compile Include="Data\SupplyMethods.cs" />
     <Compile Include="Data\SupportObject.cs" />
+    <Compile Include="Data\ViewModels\AddDriverViewModel.cs" />
+    <Compile Include="Data\ViewModels\AddTruckViewModel.cs" />
+    <Compile Include="Data\ViewModels\DeleteTruckViewModel.cs" />
+    <Compile Include="Data\ViewModels\DeleteDriverViewModel.cs" />
+    <Compile Include="Data\ViewModels\DriverViewModel.cs" />
+    <Compile Include="Data\ViewModels\EditDriverViewModel.cs" />
+    <Compile Include="Data\ViewModels\EditTruckViewModel.cs" />
+    <Compile Include="Data\ViewModels\TruckViewModel.cs" />
     <Compile Include="Services\UploadPhotos.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

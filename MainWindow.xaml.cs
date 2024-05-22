@@ -1,6 +1,6 @@
 ﻿using System.Windows;
-using TransComp.Data;
-using TransComp.Data.Context;
+using TransportComp.Data;
+using TransportComp.Data.Context;
 using TransportComp.Pages;
 
 namespace TransportComp

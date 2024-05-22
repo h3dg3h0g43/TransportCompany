@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using TransComp.Data;
-using TransComp.Data.ViewModels;
+using TransportComp.Data;
+using TransportComp.Data.ViewModels;
 
 namespace TransportComp.Pages
 {
