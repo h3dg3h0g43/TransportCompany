@@ -181,8 +181,71 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageAddDriver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageAddTruck.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageDeleteDriver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageDeleteTruck.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageDrivers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageEditDriver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageEditTruck.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageTrucks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\PageAddDriver.xaml.cs">
+      <DependentUpon>PageAddDriver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageAddTruck.xaml.cs">
+      <DependentUpon>PageAddTruck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDeleteDriver.xaml.cs">
+      <DependentUpon>PageDeleteDriver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDeleteTruck.xaml.cs">
+      <DependentUpon>PageDeleteTruck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDrivers.xaml.cs">
+      <DependentUpon>PageDrivers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditDriver.xaml.cs">
+      <DependentUpon>PageEditDriver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditTruck.xaml.cs">
+      <DependentUpon>PageEditTruck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageMain.xaml.cs">
+      <DependentUpon>PageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageTrucks.xaml.cs">
+      <DependentUpon>PageTrucks.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

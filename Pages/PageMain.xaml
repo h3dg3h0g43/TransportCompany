@@ -1,0 +1,29 @@
+﻿<Page x:Class="TransComp.Pages.PageMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:TransComp.Pages"
+      mc:Ignorable="d" d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="BtnAddTruck" Click="BtnAddTruck_OnClick" Content="Add truck"
+                        Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnEconomy" Click="BtnEconomy_OnClick" Content="Economy"
+                        Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnTrucks" Click="BtnTrucks_OnClick" Content="Trucks" Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnStatus" Click="BtnStatus_OnClick" Content="Status" Style="{StaticResource mainBtn}" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="BtnAddStaff" Click="BtnAddStaff_OnClick" Content="Add driver"
+                        Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnManagement" Click="BtnManagement_OnClick" Content="Management"
+                        Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnStaff" Click="BtnStaff_OnClick" Content="Drivers" Style="{StaticResource mainBtn}" />
+                <Button x:Name="BtnRoutes" Click="BtnPartnership_OnClick" Content="Routes"
+                        Style="{StaticResource mainBtn}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

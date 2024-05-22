@@ -1,0 +1,59 @@
+﻿<Page x:Class="TransComp.Pages.PageEditTruck"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Background="DimGray">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Truck name:" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding Name, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                         x:Name="TxtTruckName"
+                         Style="{StaticResource mainTxtBox}"
+                         Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Engine power (hp):" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding Power, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                         x:Name="TxtEnginePower"
+                         Style="{StaticResource mainTxtBox}" Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Chassis:" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding Chassis, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                         x:Name="TxtChassis"
+                         Style="{StaticResource mainTxtBox}" Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Mileage (km):" Style="{StaticResource mainLbl}" />
+                <TextBox Text="{Binding Mileage, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                         x:Name="TxtMileage"
+                         Style="{StaticResource mainTxtBox}" Validation.ErrorTemplate="{StaticResource errorTemplate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Truck photo:" Style="{StaticResource mainLbl}" />
+                <TextBox
+                    Text="{Binding TruckImagePath, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                    x:Name="TxtImagePath"
+                    Style="{StaticResource mainTxtBox}" Validation.ErrorTemplate="{StaticResource errorTemplate}"
+                    Width="240" />
+                <Button Command="{Binding AddImage}" x:Name="BtnAddImage" Content="+" Style="{StaticResource mainBtn}"
+                        Width="50" Height="40" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Depot:" Style="{StaticResource mainLbl}" />
+                <ComboBox
+                    SelectedValue="{Binding DepotId, ValidatesOnExceptions=True, UpdateSourceTrigger=PropertyChanged}"
+                    SelectedValuePath="Id" DisplayMemberPath="City"
+                    ItemsSource="{Binding Depots}" x:Name="CmbxDepot"
+                    Style="{StaticResource mainCmbx}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding EditTruck}" x:Name="BtnSave" Content="Save" Style="{StaticResource mainBtn}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
