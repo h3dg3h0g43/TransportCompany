@@ -31,7 +31,7 @@ namespace TransportComp.Data.Context
                     DataSource = "127.0.0.1",
                     UserID = "sa",
                     Password = "yourStrong(!)Password",
-                    InitialCatalog = "TransportComp",
+                    InitialCatalog = "TransComp",
                     TrustServerCertificate = true
                 }.ConnectionString;
             }

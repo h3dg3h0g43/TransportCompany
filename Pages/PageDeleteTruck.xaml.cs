@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using TransComp.Data.ViewModels;
 using TransportComp.Data;
 using TransportComp.Data.ViewModels;
 
@@ -12,7 +13,7 @@ namespace TransportComp.Pages
         {
             InitializeComponent();
 
-            DataContext = new DeleteDriverViewModel(TruckId);
+            DataContext = new DeleteTruckViewModel(TruckId);
         }
 
         private void BtnCancel_OnClick(object sender, RoutedEventArgs e)

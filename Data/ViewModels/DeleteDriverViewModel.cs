@@ -34,7 +34,6 @@ namespace TransportComp.Data.ViewModels
                     {
                         var driver = ConnectToDb.db.Drivers.Find(DriverId);
                         ConnectToDb.db.Drivers.Remove(driver);
-
                         ConnectToDb.db.SaveChanges();
                         SupplyMethods.SetMessageToStatusBar($"Водитель {driver.Name} удалён!");
                     }
