@@ -3,19 +3,21 @@ using System.Windows.Controls;
 using TransComp.Data;
 using TransComp.Data.ViewModels;
 
-namespace TransComp.Pages;
-
-public partial class PageDeleteDriver : Page
+namespace TransportComp.Pages
 {
-    public PageDeleteDriver(int DriverId)
-    {
-        InitializeComponent();
-        
-        DataContext = new DeleteDriverViewModel(DriverId);
-    }
 
-    private void BtnCancel_OnClick(object sender, RoutedEventArgs e)
+    public partial class PageDeleteDriver : Page
     {
-        SupportObject.mainFrame.GoBack();
+        public PageDeleteDriver(int DriverId)
+        {
+            InitializeComponent();
+
+            DataContext = new DeleteDriverViewModel(DriverId);
+        }
+
+        private void BtnCancel_OnClick(object sender, RoutedEventArgs e)
+        {
+            SupportObject.mainFrame.GoBack();
+        }
     }
 }

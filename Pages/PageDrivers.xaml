@@ -1,10 +1,10 @@
-﻿<Page x:Class="TransComp.Pages.PageDrivers"
+﻿<Page x:Class="TransportComp.Pages.PageDrivers"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:TransComp.Pages"
-      xmlns:viewModels="clr-namespace:TransComp.Data.ViewModels"
+      xmlns:local="clr-namespace:TransportComp.Pages"
+      xmlns:viewModels="clr-namespace:TransportComp.Data.ViewModels"
       mc:Ignorable="d"
       d:DesignHeight="720" d:DesignWidth="1280"
       Background="DimGray">
@@ -26,28 +26,28 @@
                                     <TextBlock Text="{Binding Name}" x:Name="TxtBlockName"
                                                Style="{StaticResource mainTxtBlock}" />
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                        <Label Content="Age:" Style="{StaticResource secLbl}" />
+                                        <Label Content="Возраст:" Style="{StaticResource secLbl}" />
                                         <TextBlock Text="{Binding Age}" x:Name="TxtBlockAge"
                                                    Style="{StaticResource mainTxtBlock}" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                        <Label Content="Phone number:" Style="{StaticResource secLbl}" />
+                                        <Label Content="Телефон:" Style="{StaticResource secLbl}" />
                                         <TextBlock Text="{Binding Phone}" x:Name="TxtBlockPhone"
                                                    Style="{StaticResource mainTxtBlock}" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                        <Label Content="Mileage:" Style="{StaticResource secLbl}" />
+                                        <Label Content="Километраж:" Style="{StaticResource secLbl}" />
                                         <TextBlock Text="{Binding Mileage}" x:Name="TxtBlockMileage"
                                                    Style="{StaticResource mainTxtBlock}" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                        <Label Content="Truck:" Style="{StaticResource secLbl}" />
+                                        <Label Content="Грузовик:" Style="{StaticResource secLbl}" />
                                         <TextBlock Text="{Binding TruckId}" x:Name="TxtBlockTruck"
                                                    Style="{StaticResource mainTxtBlock}" />
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                        <Button x:Name="BtnEdit" Click="ButtonEdit_OnClick" Tag="{Binding Id}" Content="Edit" Style="{StaticResource mainBtn}" />
-                                        <Button x:Name="BtnDelete" Click="ButtonDelete_OnClick" Tag="{Binding Id}" Margin="200, 0, 0, 0" Content="Delete"
+                                        <Button x:Name="BtnEdit" Click="ButtonEdit_OnClick" Tag="{Binding Id}" Content="Изменить" Style="{StaticResource mainBtn}" />
+                                        <Button x:Name="BtnDelete" Click="ButtonDelete_OnClick" Tag="{Binding Id}" Margin="200, 0, 0, 0" Content="Удалить"
                                                 Style="{StaticResource mainBtn}" />
                                     </StackPanel>
                                 </StackPanel>

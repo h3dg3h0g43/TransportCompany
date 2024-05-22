@@ -1,11 +1,13 @@
 ﻿using System.Windows.Controls;
 
-namespace TransComp.Pages;
-
-public partial class PageAddDriver : Page
+namespace TransportComp.Pages
 {
-    public PageAddDriver()
+
+    public partial class PageAddDriver : Page
     {
-        InitializeComponent();
+        public PageAddDriver()
+        {
+            InitializeComponent();
+        }
     }
 }

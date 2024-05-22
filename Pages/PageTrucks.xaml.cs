@@ -1,27 +1,30 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using TransComp.Data;
 
-namespace TransComp.Pages;
-
-public partial class PageTrucks : Page
+namespace TransportComp.Pages
 {
-    public PageTrucks()
-    {
-        InitializeComponent();
-    }
 
-    private void BtnEdit_OnClick(object sender, RoutedEventArgs e)
+    public partial class PageTrucks : Page
     {
-        var button = sender as Button;
-        var Id = Convert.ToInt32(button.Tag);
-        SupportObject.mainFrame.Navigate(new PageEditTruck(Id));
-    }
+        public PageTrucks()
+        {
+            InitializeComponent();
+        }
 
-    private void BtnDelete_OnClick(object sender, RoutedEventArgs e)
-    {
-        var button = sender as Button;
-        var Id = Convert.ToInt32(button.Tag);
-        SupportObject.mainFrame.Navigate(new PageDeleteTruck(Id));
+        private void BtnEdit_OnClick(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            var Id = Convert.ToInt32(button.Tag);
+            SupportObject.mainFrame.Navigate(new PageEditTruck(Id));
+        }
+
+        private void BtnDelete_OnClick(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            var Id = Convert.ToInt32(button.Tag);
+            SupportObject.mainFrame.Navigate(new PageDeleteTruck(Id));
+        }
     }
 }

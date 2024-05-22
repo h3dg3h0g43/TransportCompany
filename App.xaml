@@ -4,6 +4,77 @@
              xmlns:local="clr-namespace:TransportComp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="mainBtn" TargetType="Button">
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Background" Value="IndianRed" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style x:Key="mainLbl" TargetType="Label">
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="secLbl" TargetType="Label">
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="mainTxtBox" TargetType="TextBox">
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="mainTxtBlock" TargetType="TextBlock">
+            <Setter Property="Width" Value="600" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="mainCmbx" TargetType="ComboBox">
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="mainRbtn" TargetType="RadioButton">
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="Trebuchet MS" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="mainLboxItem" TargetType="ListBoxItem">
+            <Setter Property="Background" Value="DimGray"/>
+        </Style>
+        <ControlTemplate x:Key="errorTemplate">
+            <Border BorderBrush="OrangeRed" BorderThickness="2">
+                <Grid>
+                    <AdornedElementPlaceholder />
+                    <TextBlock Text="{Binding [0].ErrorContent}" Foreground="OrangeRed"
+                               VerticalAlignment="Center" HorizontalAlignment="Right"
+                               Margin="0,0,4,0" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
     </Application.Resources>
 </Application>

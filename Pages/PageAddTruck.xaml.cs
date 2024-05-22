@@ -1,11 +1,12 @@
 ﻿using System.Windows.Controls;
 
-namespace TransComp.Pages;
-
-public partial class PageAddTruck : Page
+namespace TransportComp.Pages
 {
-    public PageAddTruck()
+    public partial class PageAddTruck : Page
     {
-        InitializeComponent();
+        public PageAddTruck()
+        {
+            InitializeComponent();
+        }
     }
 }

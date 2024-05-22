@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TransportComp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="ОАО \\Титька перевозчик//" Height="720" Width="1280" MaxHeight="720" MaxWidth="1280" MinHeight="720"
+        MinWidth="1280" Background="DimGray">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*" />
+            <RowDefinition Height="616*" />
+            <RowDefinition Height="23*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Height="100" VerticalAlignment="Center" Background="DarkGray">
+            <Image Height="150" Width="150" Margin="50 0 0 0" Source="/Resources/Logo.png" />
+            <Button x:Name="BtnBack" Click="BtnBack_OnClick" Content="Назад" Margin="600 0 0 0"
+                    Style="{StaticResource mainBtn}" />
+            <Button x:Name="BtnFaq" Click="BtnFaq_OnClick" Content="FAQ" Margin="50 0 0 0"
+                    Style="{StaticResource mainBtn}" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="100,89,0,0">
+            <Image Source="/Resources/Logo.png" Width="900" Opacity="0.1" />
+        </StackPanel>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,65,0,0" Grid.RowSpan="3" />
+        <StatusBar Grid.Row="2" VerticalAlignment="Center" Background="DarkGray">
+            <TextBlock x:Name="StatusBar" />
+        </StatusBar>
+
     </Grid>
 </Window>

@@ -1,14 +1,16 @@
 ﻿using System.Windows.Controls;
 using TransComp.Data.ViewModels;
 
-namespace TransComp.Pages;
-
-public partial class PageEditDriver : Page
+namespace TransportComp.Pages
 {
-    public PageEditDriver(int DriverId)
+
+    public partial class PageEditDriver : Page
     {
-        InitializeComponent();
-        
-        DataContext = new EditDriverViewModel(DriverId);
+        public PageEditDriver(int DriverId)
+        {
+            InitializeComponent();
+
+            DataContext = new EditDriverViewModel(DriverId);
+        }
     }
 }
